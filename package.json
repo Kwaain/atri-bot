@@ -1,15 +1,39 @@
 {
   "name": "atri-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Just a bot for QQ group.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:build": "tsc -w",
+    "start:run": "nodemon dist/index.js",
+    "start:dev": "concurrently npm:start:*",
+    "start:prod": "node dist/index.js",
+    "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "atri",
+    "bot",
+    "qq",
+    "oicq"
+  ],
+  "author": "Kwaain <i@kwaain.com>",
+  "license": "MIT",
   "devDependencies": {
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "concurrently": "^7.6.0",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "oicq": "^2.3.1",
+    "openai": "^3.1.0",
+    "prettier": "^2.8.1",
+    "sequelize": "^6.28.0",
+    "sqlite3": "^5.1.4"
   }
 }
