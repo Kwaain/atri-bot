@@ -1,5 +1,5 @@
 import Sequelize from "sequelize";
 
-const db = new Sequelize("sqlite:data/db.sqlite");
+const db = new Sequelize("sqlite:data/app.db");
 
 export default db;
