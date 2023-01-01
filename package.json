@@ -1,0 +1,41 @@
+{
+  "name": "atri-bot",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "node src/app",
+    "dev": "nodemon src/app"
+  },
+  "keywords": [
+    "atri",
+    "bot",
+    "qq"
+  ],
+  "author": "Kwaain <i@kwaain.com>",
+  "license": "MIT",
+  "_moduleAliases": {
+    "@": "src"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/data/*",
+      "node_modules/*"
+    ]
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "nodemon": "^2.0.20",
+    "oicq": "^2.3.1",
+    "openai": "^3.1.0",
+    "sequelize": "^6.27.0",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/node": "^7.20.5",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
