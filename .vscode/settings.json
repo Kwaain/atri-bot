@@ -1,0 +1,10 @@
+{
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.options": {
+    "extensions": [".js", ".ts"]
+  },
+  "npm.packageManager": "pnpm"
+}
